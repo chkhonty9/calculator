@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculatrice</title>
+        <link rel="stylesheet" type="text/css" href="calcul.css">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div class="cal" >
+           <center>
+            <form>
+                <input type="text"  placeholder="0" readonly id="output"><br>
+            </form><br>
+            <table cellspacing="0px" width="300px" height="300px" >
+                <tr>
+                    <td><button>MC</button></td><td><button onclick="afficher('(')">(</button></td><td><button onclick="afficher(')')" >)</button></td><td><button>M+</button></td><td><button>M-</button></td>
+                </tr>
+                <tr>
+                    <td> <button onclick="fh()">←</button> </td><td><button onclick="effacer()">CE</button></td><td><button onclick="effacer()">C</button></td><td><button onclick="pm()">±</button></td><td><button onclick="afficher('Math.sqrt(')">√</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="afficher('7')">7</button></td><td><button onclick="afficher('8')">8</button></td><td><button onclick="afficher('9')">9</button></td><td><button onclick="afficher('/')">/</button></td><td><button onclick="afficher('/100')">%</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="afficher('4')">4</button></td><td><button onclick="afficher('5')">5</button></td><td><button onclick="afficher('6')">6</button></td><td><button onclick="afficher('*')">*</button></td><td><button onclick="afficher('1/')">1/x</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="afficher('1')">1</button></td><td><button onclick="afficher('2')">2</button></td><td><button onclick="afficher('3')">3</button></td><td><button onclick="afficher('-')">-</button></td><td rowspan="2"><button class="egal" onclick="calculer()">=</button></td>
+                </tr>
+                <tr>
+                    <td  colspan="2"> <button class="zero" onclick="afficher('2')">0</button></td><td><button onclick="afficher('.')">,</button></td><td ><button class="plus" onclick="afficher('+')">+</button></td>
+                </tr>
+            </table>
+        </center>
+        </div>
+        <script src="cal.js"></script>
+    </body>
+</html>
